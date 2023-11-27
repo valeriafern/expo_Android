@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/natural"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reino Animal"
+        android:textSize="38sp"
+        android:textColor="#000"
+        android:layout_marginBottom="60dp"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:id="@+id/linearSection1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#E8A14B"
+        android:padding="16dp"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Carnívoros"
+            android:textSize="25sp"
+            android:textColor="#333"/>
+
+        <!-- Nuevo TextView para mostrar información -->
+        <TextView
+            android:id="@+id/textViewInfoCarnivores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp"
+            android:textColor="#333"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearSection2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearSection1"
+        android:layout_marginTop="65dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        android:background="#ECE07B"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Herbívoros"
+            android:textColor="#333"
+            android:textSize="25sp" />
+
+        <!-- Nuevo TextView para mostrar información -->
+        <TextView
+            android:id="@+id/textViewInfoHerbivores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp"
+            android:textColor="#333"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearSection3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearSection2"
+        android:layout_marginTop="65dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        android:background="#5C8ACD"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Omnívoros"
+            android:textColor="#333"
+            android:textSize="25sp" />
+
+        <!-- Nuevo TextView para mostrar información -->
+        <TextView
+            android:id="@+id/textViewInfoOmnivores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp"
+            android:textColor="#333"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearSection4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearSection3"
+        android:layout_marginTop="65dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        android:background="#3997E1"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Insectívoros"
+            android:textColor="#333"
+            android:textSize="25sp" />
+
+        <!-- Nuevo TextView para mostrar información -->
+        <TextView
+            android:id="@+id/textViewInfoInsectivores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp"
+            android:textColor="#333"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearSection4"
+        android:layout_marginTop="78dp"
+        android:layout_centerHorizontal="true"
+        android:text="Siguiente"
+        android:textSize="20sp" />
+
+</RelativeLayout>
